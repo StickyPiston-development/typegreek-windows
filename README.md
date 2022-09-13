@@ -14,6 +14,7 @@ Most letters are just one key, but the special ones are listed below.
 - π p+i
 - ω o+m
 - θ t+h
+- η e+t
 - χ c
 
 Sigma is supported: ς σ and will automatically be replaced when on the end of a word.  
