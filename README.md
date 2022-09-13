@@ -1,5 +1,5 @@
 # ΤyπεΓρεεκ ινδοwς
-τhις προγραμ whιχh λετς yου τyπε γρεεκ.
+τhις προγραμ λετς yου τyπε γρεεκ.
 
 ### Building
 You can build the software using [autohotkey](https://www.autohotkey.com/)
