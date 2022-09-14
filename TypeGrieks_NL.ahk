@@ -4,7 +4,7 @@
 SendMode, Input
 diacritics := [",", "'", "/", "\", "~", ":", "_", "(", "``", ""] ;[psili, dasia, acute, grave, circumflex, diaeresis, macron, breve, iotaSub]
 vowels := [0x03B1, 0x03B5, 0x03B7, 0x03B9, 0x03BF, 0x03C5, 0x03C9] ;[alpha, epsilon, eta, iota, omicron, upsilon, omega]
-MsgBox, % "Ctrl+Shift+Alt+H voor uitleg`nCtrl+Shift+Alt+E om de accenten te bedwerken`nEscape om te stoppen"
+MsgBox, % "Ctrl+Shift+Alt+H voor uitleg`nCtrl+Shift+Alt+T om in of uit te schakelen`nCtrl+Shift+Alt+E om de accenten te bedwerken`nEscape om te stoppen"
 IfExist, %A_ScriptDir%\diacritics.dat
 	Loop, Read, %A_ScriptDir%\diacritics.dat
 		diacritics[A_Index] := A_LoopReadLine
@@ -1044,3 +1044,4 @@ changeCode(hex, mod)
 	}
 	return ret
 }
+^+!t::Suspend, Toggle
