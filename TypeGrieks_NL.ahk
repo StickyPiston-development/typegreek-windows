@@ -15,8 +15,8 @@ Gui, font, s15
 Gui, Add, Text, x45 y5 w70 h30, Keys:
 Gui, Add, Text, x165 y5 w90 h25, Accenten:
 Gui, font, s10
-Gui, Add, Text, x12 y29 w180 h405, % "A→Α`nB→Β`nG→Γ`nD→Δ`nE→Ε`nZ→Ζ`nE+T→Η`nT+H→Θ`nI→Ι`nK→Κ`nL→Λ`nM→Μ`nN→Ν`nX→Ξ`nO→Ο`nP+I→Π`nR→Ρ`nS→Σ`ns   →ς`nT→Τ`nU→Υ`nP+H→Φ`nC→Χ`nP+S→Ψ`nO+M→Ω"
-Gui, Add, Text, x90 y29 w180 h405, % "a→α`nb→β`ng→γ`nd→δ`ne→ε`nz→ζ`ne+t→η`nt+h→θ`ni→ι`nk→κ`nl→λ`nm→μ`nn→ν`nx→ξ`no→ο`np+i→π`nr→ρ`ns→σ`nAlt+s→ς`nt→τ`nu→υ`np+h→φ`nc→χ`np+s→ψ`no+m→ω"
+Gui, Add, Text, x12 y29 w180 h405, % "A`nB`nG`nD`nE`nZ`nE+T`nT+H`nI`nK`nL`nM`nN`nX`nO`nP+I`nR`nS`ns*`nT`nU`nP+H`nC`nP+S`nO+M"
+Gui, Add, Text, x90 y29 w180 h405, % "Alfa`nBeta`nGamma`nDelta`nEta`nDzeta`nEta`nTheta`nIota`nKappa`nLambda`nMu`nNu`nXi`nOmicron`nPi`nRho`nSigma`nSigma*`nTau`nUpsilon`nPhi`nChi`nPsi`nOmega"
 Gui, font, s13
 Gui, Add, Text, x152 y29 w120 h190, % "Psili (ἀ):`nDasia (ἁ):`nAcute (ά):`nGrave (ὰ):`nCircumflex (ᾶ):`nDiaeresis (ϊ):`nMacron (ᾱ):`nBreve (ᾰ):`nSub. Iota (ᾳ):"
 Gui, Add, Text, x278 y29 w40 h190, % diacritics[1] "`n" diacritics[2] "`n" diacritics[4] "`n" diacritics[3] "`n" diacritics[5] "`n" diacritics[6] "`n" diacritics[7] "`n" diacritics[8] "`n" diacritics[9]
