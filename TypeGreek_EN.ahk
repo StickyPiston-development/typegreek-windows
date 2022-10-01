@@ -2,7 +2,7 @@
 #SingleInstance force
 #MaxThreadsPerHotkey 5
 SendMode, Input
-diacritics := [",", "'", "/", "\", "~", ":", "_", "(", "``", ""] ;[psili, dasia, acute, grave, circumflex, diaeresis, macron, breve, iotaSub]
+diacritics := ["-", "+", "/", "\", "=", ":", "_", "(", ";", ""] ;[psili, dasia, acute, grave, circumflex, diaeresis, macron, breve, iotaSub]
 vowels := [0x03B1, 0x03B5, 0x03B7, 0x03B9, 0x03BF, 0x03C5, 0x03C9] ;[alpha, epsilon, eta, iota, omicron, upsilon, omega]
 MsgBox, % "Ctrl+Shift+Alt+H for help`nCtrl+Shift+Alt+T to toggle`nCtrl+Shift+Alt+E to edit diacritics`nEscape to quit"
 IfExist, %A_ScriptDir%\diacritics.dat
@@ -17,8 +17,8 @@ Gui, Add, Text, x165 y5 w90 h25, Diacritics:
 Gui, font, s10
 Gui, Add, Text, x12 y29 w180 h405, % "A`nB`nG`nD`nE`nZ`nE+T`nT+H`nI`nK`nL`nM`nN`nX`nO`nP+I`nR`nS`ns*`nT`nU`nP+H`nC`nP+S`nO+M"
 Gui, Add, Text, x90 y29 w180 h405, % "Alfa`nBeta`nGamma`nDelta`nEta`nDzeta`nEta`nTheta`nIota`nKappa`nLambda`nMu`nNu`nXi`nOmicron`nPi`nRho`nSigma`nSigma*`nTau`nUpsilon`nPhi`nChi`nPsi`nOmega"
-Gui, font, s13
-Gui, Add, Text, x152 y29 w120 h190, % "Psili (ἀ):`nDasia (ἁ):`nAcute (ά):`nGrave (ὰ):`nCircumflex (ᾶ):`nDiaeresis (ϊ):`nMacron (ᾱ):`nBreve (ᾰ):`nSub. Iota (ᾳ):"
+Gui, font, s10
+Gui, Add, Text, x152 y29 w120 h190, % "Psili:`nDasia:`nAcute:`nGrave:`nCircumflex:`nDiaeresis:`nMacron:`nBreve:`nSub. Iota:"
 Gui, Add, Text, x278 y29 w40 h190, % diacritics[1] "`n" diacritics[2] "`n" diacritics[4] "`n" diacritics[3] "`n" diacritics[5] "`n" diacritics[6] "`n" diacritics[7] "`n" diacritics[8] "`n" diacritics[9]
 Gui, font, s10
 Gui, Add, Button, x189 y440 w100 h40, Change Diacritics
@@ -50,15 +50,15 @@ Gui, Add, Edit, vMacron Limit1 x120 y129 w50 h20, % diacritics[7]
 Gui, Add, Edit, vBreve Limit1 x120 y149 w50 h20, % diacritics[8]
 Gui, Add, Edit, vSubIota Limit1 x120 y169 w50 h20, % diacritics[9]
 Gui, font, s13
-Gui, Add, Text, x12 y5 w100 h180, Psili (ἀ)
-Gui, Add, Text, x12 y25 w100 h180, Dasia (ἁ)
-Gui, Add, Text, x12 y45 w100 h180, Acute (ά)
-Gui, Add, Text, x12 y65 w100 h180, Grave (ὰ)
-Gui, Add, Text, x12 y85 w100 h180, Circumflex (ᾶ)
-Gui, Add, Text, x12 y105 w100 h180, Diaeresis (ϊ)
-Gui, Add, Text, x12 y125 w100 h180, Macron (ᾱ)
-Gui, Add, Text, x12 y145 w100 h180, Breve (ᾰ)
-Gui, Add, Text, x12 y165 w100 h180, Sub. Iota (ᾳ)
+Gui, Add, Text, x12 y5 w100 h180, Psili
+Gui, Add, Text, x12 y25 w100 h180, Dasia
+Gui, Add, Text, x12 y45 w100 h180, Acute
+Gui, Add, Text, x12 y65 w100 h180, Grave
+Gui, Add, Text, x12 y85 w100 h180, Circumflex
+Gui, Add, Text, x12 y105 w100 h180, Diaeresis
+Gui, Add, Text, x12 y125 w100 h180, Macron
+Gui, Add, Text, x12 y145 w100 h180, Breve
+Gui, Add, Text, x12 y165 w100 h180, Sub. Iota
 Gui, font, s10
 Gui, Add, Text, x20 y193 w180 h180, Leave Empty to Disable
 Gui, Add, Button, default x6 y219 w55 h30, Change
@@ -88,15 +88,15 @@ else
 return
 
 ButtonDefault:
-GuiControl,, Psili, % ","
-GuiControl,, Dasia, % "'"
+GuiControl,, Psili, % "-"
+GuiControl,, Dasia, % "+"
 GuiControl,, Acute, % "/"
 GuiControl,, Grave, % "\"
-GuiControl,, Circumflex, % "~"
+GuiControl,, Circumflex, % "="
 GuiControl,, Diaeresis, % ":"
 GuiControl,, Macron, % "_"
 GuiControl,, Breve, % "("
-GuiControl,, SubIota, % "``"
+GuiControl,, SubIota, % ";"
 return
 
 esc::exitapp
