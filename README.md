@@ -9,7 +9,7 @@ You can build the software using [autohotkey](https://www.autohotkey.com/)
 [NL] nederlandse versie
 
 ### Documentation
-Check the wiki
+Check the [wiki](https://github.com/MrStickyPiston/typegreek-windows/wiki)
 
 ### License
-Check license.md
+Check [license.md](https://github.com/MrStickyPiston/typegreek-windows/blob/main/License.md)
