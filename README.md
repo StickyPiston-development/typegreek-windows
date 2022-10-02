@@ -18,6 +18,7 @@ This is not a problem, but you have to compile the program yourself. Follow the 
 ### Usage
 If you have installed the program, just (double)click the file again to start it up.
 For further info, you can use the [wiki](https://github.com/MrStickyPiston/typegreek-windows/wiki).
+On the wiki is information about the keybinds, diacritics and setting custom diacritics.
 
 ### Compiling
 
