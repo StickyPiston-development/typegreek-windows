@@ -1,5 +1,5 @@
 @echo [off]
-title TypeGreek
+title TypeGreek installer
 
 if not exist "%UserProfile%\.typegreek" mkdir %UserProfile%\.typegreek
 
@@ -12,8 +12,13 @@ curl -A "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64)" -L "https://
 
 start typegreek_EN.exe
 
-mklink "%userprofile%\Start Menu\Programs\Startup\%~nx0" "typegreek_EN.exe"
-mklink "%userprofile%\Start Menu\Programs\Startup\%~nx0" "typegreek_NL.exe"
+cd %AppData%\Microsoft\Windows\Start Menu\Programs\
+mklink /h "TypeGreek windows (EN).exe" "%UserProfile%\.typegreek\typegreek_EN.exe"
+mklink /h "TypeGreek windows (NL).exe" "%UserProfile%\.typegreek\typegreek_NL.exe"
+
+cd %UserProfile%\Desktop
+mklink /h "TypeGreek Windows (EN).exe" "%UserProfile%\.typegreek\typegreek_EN.exe"
+mklink /h "TypeGreek Windows (NL).exe" "%UserProfile%\.typegreek\typegreek_NL.exe"
 
 echo set WshShell = WScript.CreateObject("WScript.Shell") > %tmp%\tmp.vbs
 echo WScript.Quit (WshShell.Popup( "TypeGreek windows has been installed!" ,10 ,"TypeGreek windows installer", 0)) >> %tmp%\tmp.vbs
