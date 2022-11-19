@@ -1,7 +1,6 @@
 @echo off
-title TypeGreek installer
-
-if not exist "%UserProfile%\.typegreek_beta" mkdir %UserProfile%\.typegreek_beta
+title TypeGreek host
+if not DEFINED IS_MINIMIZED set IS_MINIMIZED=1 && start "" /min "%~dpnx0" %* && exit
 
 cd %UserProfile%\.typegreek_beta
 del -f typegreek_EN.ahk
@@ -40,9 +39,4 @@ cd %appdata%\Microsoft\Windows\Start Menu\Programs\Startup
 del TypeGreek_windows_beta_updater.bat
 curl -A "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64)" -L "https://raw.githubusercontent.com/MrStickyPiston/typegreek-windows/installer/beta_updater.bat" -o TypeGreek_windows_beta_updater.bat
 
-echo set WshShell = WScript.CreateObject("WScript.Shell") > %tmp%\tmp.vbs
-echo WScript.Quit (WshShell.Popup( "TypeGreek windows and AutoHotKey have been installed!" ,10 ,"TypeGreek windows installer", 0)) >> %tmp%\tmp.vbs
-cscript /nologo %tmp%\tmp.vbs
-del %tmp%\tmp.vbs
-
-cd %UserProfile%\downloads
+exit
