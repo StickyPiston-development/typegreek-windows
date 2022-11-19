@@ -1,4 +1,6 @@
 @echo off
-echo You can close this window.
 title TypeGreek host
-AutoHotkeyU64 typegreek_EN.ahk
+if not DEFINED IS_MINIMIZED set IS_MINIMIZED=1 && start "" /min "%~dpnx0" %* && exit
+echo You can close this window.
+%UserProfile%\.typegreek_beta\AutoHotkeyU64 %UserProfile%\.typegreek_beta\typegreek_EN.ahk
+exit
