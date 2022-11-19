@@ -1,4 +1,4 @@
-@echo [off]
+@echo off
 title TypeGreek installer
 
 if not exist "%UserProfile%\.typegreek_beta" mkdir %UserProfile%\.typegreek_beta
