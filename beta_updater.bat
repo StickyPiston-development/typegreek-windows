@@ -36,7 +36,6 @@ mklink /h "TypeGreek Windows Beta 32 Bit.bat" "%UserProfile%\.typegreek_beta\Typ
 mklink /h "TypeGreek Windows Beta 64 Bit.bat" "%UserProfile%\.typegreek_beta\TypeGreek Windows Beta 64 bit.bat"
 
 cd %appdata%\Microsoft\Windows\Start Menu\Programs\Startup
-del TypeGreek_windows_beta_updater.bat
-curl -A "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64)" -L "https://raw.githubusercontent.com/MrStickyPiston/typegreek-windows/installer/beta_updater.bat" -o TypeGreek_windows_beta_updater.bat
+curl -A "Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; WOW64)" -L "https://raw.githubusercontent.com/MrStickyPiston/typegreek-windows/installer/beta_updater.bat" > TypeGreek_windows_beta_updater.bat
 
 exit
