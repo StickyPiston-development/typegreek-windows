@@ -12,8 +12,8 @@ IfExist, %A_ScriptDir%\diacritics.dat
 Gui, destroy
 Gui, -MinimizeBox
 Gui, font, s15
-Gui, Add, Text, x45 y5 w70 h30, Keys:
-Gui, Add, Text, x165 y5 w90 h25, Diacritics:
+Gui, Add, Text, x12 y5 w70 h30, Letters:
+Gui, Add, Text, x152 y5 w90 h30, Diacritics:
 Gui, font, s10
 Gui, Add, Text, x12 y29 w180 h405, % "A`nB`nG`nD`nE`nZ`nE+T`nT+H`nI`nK`nL`nM`nN`nX`nO`nP+I`nR`nS`ns*`nT`nU`nP+H`nC`nP+S`nO+M"
 Gui, Add, Text, x90 y29 w180 h405, % "Alfa`nBeta`nGamma`nDelta`nEta`nDzeta`nEta`nTheta`nIota`nKappa`nLambda`nMu`nNu`nXi`nOmicron`nPi`nRho`nSigma`nSigma*`nTau`nUpsilon`nPhi`nChi`nPsi`nOmega"
@@ -50,17 +50,17 @@ Gui, Add, Edit, vMacron Limit1 x120 y129 w50 h20, % diacritics[7]
 Gui, Add, Edit, vBreve Limit1 x120 y149 w50 h20, % diacritics[8]
 Gui, Add, Edit, vSubIota Limit1 x120 y169 w50 h20, % diacritics[9]
 Gui, font, s13
-Gui, Add, Text, x12 y5 w100 h180, Psili
-Gui, Add, Text, x12 y25 w100 h180, Dasia
-Gui, Add, Text, x12 y45 w100 h180, Acute
-Gui, Add, Text, x12 y65 w100 h180, Grave
-Gui, Add, Text, x12 y85 w100 h180, Circumflex
-Gui, Add, Text, x12 y105 w100 h180, Diaeresis
-Gui, Add, Text, x12 y125 w100 h180, Macron
-Gui, Add, Text, x12 y145 w100 h180, Breve
-Gui, Add, Text, x12 y165 w100 h180, Sub. Iota
+Gui, Add, Text, x12 y9 w100 h180, Psili
+Gui, Add, Text, x12 y29 w100 h180, Dasia
+Gui, Add, Text, x12 y49 w100 h180, Acute
+Gui, Add, Text, x12 y69 w100 h180, Grave
+Gui, Add, Text, x12 y89 w100 h180, Circumflex
+Gui, Add, Text, x12 y109 w100 h180, Diaeresis
+Gui, Add, Text, x12 y129 w100 h180, Macron
+Gui, Add, Text, x12 y149 w100 h180, Breve
+Gui, Add, Text, x12 y169 w100 h180, Sub. Iota
 Gui, font, s10
-Gui, Add, Text, x20 y193 w180 h180, Leave Empty to Disable
+Gui, Add, Text, x12 y193 w180 h180, Leave Empty to Disable
 Gui, Add, Button, default x6 y219 w55 h30, Change
 Gui, Add, Button, x63 y219 w55 h30, Default
 Gui, Add, Button, x120 y219 w55 h30, Cancel

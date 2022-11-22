@@ -12,13 +12,13 @@ IfExist, %A_ScriptDir%\diacritics.dat
 Gui, destroy
 Gui, -MinimizeBox
 Gui, font, s15
-Gui, Add, Text, x45 y5 w70 h30, Keys:
-Gui, Add, Text, x165 y5 w90 h25, Accenten:
+Gui, Add, Text, x12 y5 w70 h30, Letters:
+Gui, Add, Text, x152 y5 w90 h25, Accenten:
 Gui, font, s10
 Gui, Add, Text, x12 y29 w180 h405, % "A`nB`nG`nD`nE`nZ`nE+T`nT+H`nI`nK`nL`nM`nN`nX`nO`nP+I`nR`nS`ns*`nT`nU`nP+H`nC`nP+S`nO+M"
 Gui, Add, Text, x90 y29 w180 h405, % "Alfa`nBeta`nGamma`nDelta`nEta`nDzeta`nEta`nTheta`nIota`nKappa`nLambda`nMu`nNu`nXi`nOmicron`nPi`nRho`nSigma`nSigma*`nTau`nUpsilon`nPhi`nChi`nPsi`nOmega"
 Gui, font, s10
-Gui, Add, Text, x152 y29 w120 h190, % "Psili:`nDasia:`nAcute:`nGrave:`nCircumflex:`nDiaeresis:`nMacron:`nBreve:`nSub. Iota:"
+Gui, Add, Text, x152 y29 w120 h190, % "Spiritus lenis:`nSpiritus asper:`nAcutus:`nGravis:`nCircumflexus:`nTrema:`nMacron:`nBreve:`nIota subscriptum:"
 Gui, Add, Text, x278 y29 w40 h190, % diacritics[1] "`n" diacritics[2] "`n" diacritics[4] "`n" diacritics[3] "`n" diacritics[5] "`n" diacritics[6] "`n" diacritics[7] "`n" diacritics[8] "`n" diacritics[9]
 Gui, font, s10
 Gui, Add, Button, x189 y440 w100 h40, Wijzig Accenten
@@ -50,28 +50,29 @@ Gui, Add, Edit, vMacron Limit1 x120 y129 w50 h20, % diacritics[7]
 Gui, Add, Edit, vBreve Limit1 x120 y149 w50 h20, % diacritics[8]
 Gui, Add, Edit, vSubIota Limit1 x120 y169 w50 h20, % diacritics[9]
 Gui, font, s13
-Gui, Add, Text, x12 y5 w100 h180, Psili
-Gui, Add, Text, x12 y25 w100 h180, Dasia
-Gui, Add, Text, x12 y45 w100 h180, Acute
-Gui, Add, Text, x12 y65 w100 h180, Grave
-Gui, Add, Text, x12 y85 w100 h180, Circumflex
-Gui, Add, Text, x12 y105 w100 h180, Diaeresis
-Gui, Add, Text, x12 y125 w100 h180, Macron
-Gui, Add, Text, x12 y145 w100 h180, Breve
-Gui, Add, Text, x12 y165 w100 h180, Sub. Iota
+Gui, Add, Text, x12 y9 w100 h180, Spiritus lenis
+Gui, Add, Text, x12 y29 w100 h180, Spiritus asper
+Gui, Add, Text, x12 y49 w100 h180, Acutus
+Gui, Add, Text, x12 y69 w100 h180, Gravis
+Gui, Add, Text, x12 y89 w100 h180, Circumflexus
+Gui, Add, Text, x12 y109 w100 h180, Trema
+Gui, Add, Text, x12 y129 w100 h180, Macron
+Gui, Add, Text, x12 y149 w100 h180, Breve
+Gui, Add, Text, x12 y169 w100 h180, sub Iota
 Gui, font, s10
-Gui, Add, Text, x20 y193 w180 h180, Laat leeg om uit te schakelen.
+Gui, Add, Text, x12 y193 w180 h180, Geen Key = Geen Accent
+Gui, font, s9
 Gui, Add, Button, default x6 y219 w55 h30, Verander
-Gui, Add, Button, x63 y219 w55 h30, Default
-Gui, Add, Button, x120 y219 w55 h30, Cancel
+Gui, Add, Button, x63 y219 w55 h30, Standaard
+Gui, Add, Button, x120 y219 w55 h30, Annuleer
 Gui, Show, w180 h262, Wijzig accenten
 return
 
-ButtonCancel:
+ButtonAnnuleer:
 Gui, destroy
 return
 
-ButtonChange:
+ButtonVerander:
 Gui, submit
 if(Psili == Dasia OR Psili == Acute OR Psili == Grave OR Psili == Circumflex OR Psili == Diaeresis OR Psili == Macron OR Psili == Breve OR Psili == SubIota OR Dasia == Acute OR Dasia == Grave OR Dasia == Circumflex OR Dasia == Diaeresis OR Dasia == Macron OR Dasia == Breve OR Dasia == SubIota OR Acute == Grave OR Acute == Circumflex OR Acute == Diaeresis OR Acute == Macron OR Acute == Breve OR Acute == SubIota OR Grave == Circumflex OR Grave == Diaeresis OR Grave == Macron OR Grave == Breve OR Grave == SubIota OR Circumflex == Diaeresis OR Circumflex == Macron OR Circumflex == Breve OR Circumflex == SubIota OR Diaeresis == Macron OR Diaeresis == Breve OR Diaeresis == SubIota OR Macron == Breve OR Macron == SubIota OR Breve == SubIota)
 {
@@ -87,7 +88,7 @@ else
 }
 return
 
-ButtonDefault:
+ButtonStandaard:
 GuiControl,, Psili, % "-"
 GuiControl,, Dasia, % "+"
 GuiControl,, Acute, % "/"
