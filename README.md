@@ -36,6 +36,7 @@ NOTE: only compile if the program does not work otherwise, or if you like compil
 7. (Double)click the typegreek_EN.exe file.
 8. The window will popup now. Click "OK" to close the GUI and start typing greek. Instructions are on the screen, but for more detailed info, You can check the [wiki](https://github.com/MrStickyPiston/typegreek-windows/wiki). If that GUI does **not** open a window, create a bug report [here](https://github.com/MrStickyPiston/typegreek-windows/issues/new)
 
+### Documentation
 On our [wiki](https://github.com/MrStickyPiston/typegreek-windows/wiki) a lot of info is available. If you still have issues you can [submit a new issue](https://github.com/StickyPiston-development/TypeGreek-Windows/issues/new/choose).
 
 ### License
