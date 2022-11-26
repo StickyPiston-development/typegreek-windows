@@ -166,6 +166,7 @@
   border-radius: 34px;
   padding-right: var(--dl-space-space-fiveunits);
   padding-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
   background-color: var(--dl-color-primary-100);
   border-top-width: 0px;
   border-left-width: 0px;
