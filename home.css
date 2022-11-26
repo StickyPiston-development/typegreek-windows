@@ -121,7 +121,8 @@
   justify-content: space-between;
 }
 .home-image {
-  width: 50;
+  width: 50px;
+  height: 50px;
 }
 .home-menu-close {
   display: flex;
@@ -962,7 +963,12 @@
   }
   .home-mobile-menu {
     height: 360px;
+    display: none;
     box-shadow: 5px 5px 10px 0px #d4d4d4;
+  }
+  .home-image {
+    width: 50px;
+    height: 50px;
   }
   .home-heading {
     text-align: center;
@@ -1053,6 +1059,10 @@
   }
   .home-mobile-menu {
     padding: 16px;
+  }
+  .home-image {
+    width: 50px;
+    height: 50px;
   }
   .home-cta-btn1 {
     font-size: 16px;
