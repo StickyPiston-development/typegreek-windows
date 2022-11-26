@@ -556,7 +556,10 @@
 .home-text34 {
   color: var(--dl-color-gray-500);
 }
-.home-text40 {
+.home-link08 {
+  text-decoration: underline;
+}
+.home-text43 {
   color: var(--dl-color-gray-500);
   display: none;
 }
@@ -580,7 +583,7 @@
   flex-direction: column;
   padding-bottom: var(--dl-space-space-fiveunits);
 }
-.home-text41 {
+.home-text44 {
   margin-bottom: var(--dl-space-space-fiveunits);
 }
 .home-cards-container1 {
@@ -683,7 +686,7 @@
   height: 24px;
   margin-right: var(--dl-space-space-unit);
 }
-.home-text44 {
+.home-text47 {
   color: var(--dl-color-gray-500);
   text-align: left;
 }
@@ -767,7 +770,7 @@
   width: 24px;
   height: 24px;
 }
-.home-text49 {
+.home-text52 {
   color: var(--dl-color-gray-500);
   text-align: left;
 }
@@ -818,11 +821,11 @@
   font-weight: 700;
   text-transform: uppercase;
 }
-.home-text50 {
+.home-text53 {
   font-size: 20px;
   text-transform: lowercase;
 }
-.home-text51 {
+.home-text54 {
   font-size: 24px;
   font-style: normal;
   font-family: Roboto;
@@ -870,7 +873,7 @@
   width: 24px;
   height: 24px;
 }
-.home-text52 {
+.home-text55 {
   color: var(--dl-color-gray-500);
   text-align: left;
 }
@@ -902,7 +905,7 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-.home-text53 {
+.home-text56 {
   margin-top: var(--dl-space-space-fiveunits);
   margin-bottom: var(--dl-space-space-fiveunits);
 }
@@ -927,7 +930,7 @@
   font-weight: 700;
   margin-bottom: var(--dl-space-space-doubleunit);
 }
-.home-link08 {
+.home-link09 {
   display: contents;
 }
 .home-adress {
@@ -942,7 +945,7 @@
   height: 24px;
   margin-right: var(--dl-space-space-doubleunit);
 }
-.home-link09 {
+.home-link10 {
   display: contents;
 }
 .home-email {
@@ -957,7 +960,7 @@
   height: 24px;
   margin-right: var(--dl-space-space-doubleunit);
 }
-.home-link10 {
+.home-link11 {
   display: contents;
 }
 .home-github {
@@ -1145,7 +1148,7 @@
   .home-secondary-text {
     text-align: center;
   }
-  .home-text41 {
+  .home-text44 {
     text-align: center;
   }
   .home-cards-container1 {
@@ -1237,7 +1240,7 @@
   .home-secondary-text {
     text-align: center;
   }
-  .home-text41 {
+  .home-text44 {
     text-align: center;
   }
   .home-testimonial-card {
@@ -1254,7 +1257,7 @@
     padding-left: 0px;
     padding-right: 0px;
   }
-  .home-text53 {
+  .home-text56 {
     text-align: center;
   }
   .home-locations-container {
