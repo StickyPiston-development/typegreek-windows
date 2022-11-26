@@ -69,63 +69,84 @@
 
       <div class="home-container">
         <div data-role="Header" class="home-navbar-container">
-          <div class="home-navbar">
-            <div class="home-logo">
-              <img
-                alt="image"
-                src="public/playground_assets/icon.ico"
-                class="home-image"
-              />
+          <header data-thq="thq-navbar" class="home-navbar-interactive">
+            <img
+              alt="logo"
+              src="public/playground_assets/icon.ico"
+              class="home-logo"
+            />
+            <div
+              data-role="Nav"
+              data-thq="thq-navbar-nav"
+              class="home-desktop-menu"
+            >
+              <nav
+                data-role="Nav"
+                data-thq="thq-navbar-nav-links"
+                class="home-nav"
+              >
+                <a href="#features" class="home-link">Features</a>
+                <a href="#about-us" class="home-link01">About Us</a>
+                <a href="#reviews" class="home-link02">Reviews</a>
+                <a href="#contact" class="home-link03">Contact</a>
+              </nav>
             </div>
-            <div class="home-links-container">
-              <a href="#features" class="home-link Anchor">features</a>
-              <a href="#about-us" class="home-link01 Anchor">About Us</a>
-              <a href="#reviews" class="home-link02 Anchor">Reviews</a>
-              <a href="#contact" class="home-link03 Anchor">contact</a>
-            </div>
-            <div class="home-cta-container">
+            <div data-thq="thq-navbar-btn-group" class="home-btn-group">
               <a href="download.html" class="home-cta-btn Anchor button">
                 <span class="home-text">
                   <span>DOWNLOAD</span>
                   <br />
                 </span>
               </a>
-              <div data-role="BurgerMenu" class="home-burger-menu">
-                <svg viewBox="0 0 1024 1024" class="home-icon">
-                  <path
-                    d="M128 256h768v86h-768v-86zM128 554v-84h768v84h-768zM128 768v-86h768v86h-768z"
-                  ></path>
-                </svg>
-              </div>
             </div>
-            <div data-role="MobileMenu" class="home-mobile-menu">
-              <div class="home-top">
-                <img
-                  alt="image"
-                  src="public/playground_assets/icon.ico"
-                  class="home-image1"
-                />
-                <div data-role="CloseMobileMenu" class="home-container1">
-                  <svg viewBox="0 0 1024 1024" class="home-icon02">
-                    <path
-                      d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
-                    ></path>
-                  </svg>
+            <div data-thq="thq-burger-menu" class="home-burger-menu">
+              <svg viewBox="0 0 1024 1024" class="home-icon">
+                <path
+                  d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                ></path>
+              </svg>
+            </div>
+            <div data-thq="thq-mobile-menu" class="home-mobile-menu">
+              <div
+                data-role="Nav"
+                data-thq="thq-mobile-menu-nav"
+                class="home-nav1"
+              >
+                <div class="home-container1">
+                  <img
+                    alt="image"
+                    src="public/playground_assets/icon.ico"
+                    class="home-image"
+                  />
+                  <div data-thq="thq-close-menu" class="home-menu-close">
+                    <svg viewBox="0 0 1024 1024" class="home-icon02">
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <nav
+                  data-role="Nav"
+                  data-thq="thq-mobile-menu-nav-links"
+                  class="home-nav2"
+                >
+                  <a href="#features" class="home-link04">Features</a>
+                  <a href="#about-us" class="home-link05">About Us</a>
+                  <a href="#reviews" class="home-link06">Reviews</a>
+                  <a href="#contact" class="home-link07">Contact</a>
+                </nav>
+                <div class="home-container2">
+                  <a href="download.html" class="home-cta-btn1 Anchor button">
+                    <span class="home-text03">
+                      <span>DOWNLOAD</span>
+                      <br />
+                    </span>
+                  </a>
                 </div>
               </div>
-              <div class="home-mid">
-                <div class="home-links-container1">
-                  <a href="#features" class="home-link04 Anchor">features</a>
-                  <a href="#about-us" class="home-link05 Anchor">About us</a>
-                  <a href="#reviews" class="home-link06 Anchor">Reviews</a>
-                  <a href="#contact" class="home-link07 Anchor">contact</a>
-                </div>
-                <a href="download.html" class="home-cta-btn1 button Anchor">
-                  DOWNLOAD
-                </a>
-              </div>
             </div>
-          </div>
+          </header>
         </div>
         <div class="home-hero">
           <div class="home-hero-text-container">
@@ -133,7 +154,7 @@
               <span>Start typing Greek on your windows PC. It is Free!</span>
               <br />
             </h1>
-            <span class="home-text05">
+            <span class="home-text08">
               <span>υστ δο ιτ! ινσταλλ τhε προγραμ ανδ τyπε.</span>
               <br class="Section-Text" />
             </span>
@@ -142,17 +163,17 @@
           <img
             alt="image"
             src="https://images.unsplash.com/photo-1594025598468-f2ac06104cb6?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDExfHxncmVla3xlbnwwfHx8fDE2NjkzNzE5MDQ&amp;ixlib=rb-4.0.3&amp;w=1500"
-            class="home-image2"
+            class="home-image1"
           />
         </div>
         <div class="home-section-separator"></div>
         <div id="features" class="home-features">
           <div class="home-heading-container">
-            <h2 class="home-text08 Section-Heading">
+            <h2 class="home-text11 Section-Heading">
               <span>Work faster, not harder</span>
               <br />
             </h2>
-            <span class="home-text11">
+            <span class="home-text14">
               <span>
                 Without program, it was very hard to type ancient Greek on a
                 computer. With our program, you can just type it!
@@ -165,10 +186,10 @@
               <img
                 alt="image"
                 src="public/playground_assets/helpmenu-1500w.png"
-                class="home-image3"
+                class="home-image2"
               />
               <span class="home-heading1 Card-Heading">Why we did</span>
-              <span class="home-text14 Card-Text">
+              <span class="home-text17 Card-Text">
                 <span>
                   Before we made this program, everyone had to either type out a
                   text in a web app or change keyboard to greek, and back to
@@ -182,10 +203,10 @@
               <img
                 alt="image"
                 src="public/playground_assets/icon.ico"
-                class="home-image4"
+                class="home-image3"
               />
               <span class="home-heading2 Card-Heading">What we did</span>
-              <span class="home-text17 Card-Text">
+              <span class="home-text20 Card-Text">
                 <span>
                   We built an easily toggleable program to type it for you in
                   your favourite program. It is fully compatible with any modern
@@ -199,10 +220,10 @@
               <img
                 alt="image"
                 src="public/playground_assets/knipsel-200h.png"
-                class="home-image5"
+                class="home-image4"
               />
               <span class="home-heading3 Card-Heading">How we did</span>
-              <span class="home-text20 Card-Text">
+              <span class="home-text23 Card-Text">
                 <span>
                   We coded the installer with Batch and the shortcuts with
                   VBscript. This is because Batch does not support admin less
@@ -215,51 +236,9 @@
           </div>
         </div>
         <div class="home-section-separator1"></div>
-        <div id="services" class="home-services">
-          <div class="home-service-card">
-            <div class="home-card-content">
-              <h3 class="home-text23 BigCard-Heading">Service name</h3>
-              <span class="home-text24 Card-Text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                nec odio. Praesent libero.
-              </span>
-              <button class="home-button button Anchor">READ MORE</button>
-            </div>
-          </div>
-          <div class="home-service-card1">
-            <div class="home-card-content1">
-              <h3 class="home-text25 BigCard-Heading">Service name</h3>
-              <span class="home-text26 Card-Text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                nec odio. Praesent libero.
-              </span>
-              <button class="home-button1 button Anchor">READ MORE</button>
-            </div>
-          </div>
-          <div class="home-service-card2">
-            <div class="home-card-content2">
-              <h3 class="home-text27 BigCard-Heading">Service name</h3>
-              <span class="home-text28 Card-Text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                nec odio. Praesent libero.
-              </span>
-              <button class="home-button2 Anchor button">READ MORE</button>
-            </div>
-          </div>
-          <div class="home-service-card3">
-            <div class="home-card-content3">
-              <h3 class="home-text29 BigCard-Heading">Service name</h3>
-              <span class="home-text30 Card-Text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
-                nec odio. Praesent libero.
-              </span>
-              <button class="home-button3 button Anchor">READ MORE</button>
-            </div>
-          </div>
-        </div>
         <div id="about-us" class="home-about-us">
           <div class="home-heading-container1">
-            <h2 class="home-text31 Section-Heading">
+            <h2 class="home-text26 Section-Heading">
               What's the story behind TypeGreek windows?
             </h2>
             <span class="home-secondary-text">
@@ -271,7 +250,7 @@
             </span>
           </div>
           <div class="home-text-container">
-            <span class="home-text34">
+            <span class="home-text29">
               <span class="Section-Text">
                 We are gymnasiasts, and we needed a tool to type ancient Greek
                 with. The tools that are available , are not supported by most
@@ -309,27 +288,11 @@
               </a>
               <br />
             </span>
-            <span class="home-text43 Section-Text">
-              Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-              accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-              quae ab illo inventore veritatis et quasi architecto beatae vitae
-              dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
-              aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
-              eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
-              est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
-              velit, sed quia non numquam eius modi tempora incidunt ut labore
-              et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima
-              veniam, quis nostrum exercitationem ullam corporis suscipit
-              laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem
-              vel eum iure reprehenderit qui in ea voluptate velit esse quam
-              nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
-              voluptas nulla pariatur?
-            </span>
           </div>
         </div>
         <div class="home-section-separator2"></div>
         <div id="reviews" class="home-reviews">
-          <h2 class="home-text44 Section-Heading">Reviews</h2>
+          <h2 class="home-text38 Section-Heading">Reviews</h2>
           <div class="home-cards-container1">
             <div class="home-testimonial-card">
               <div class="home-card-heading">
@@ -376,7 +339,7 @@
                   </svg>
                 </div>
               </div>
-              <span class="home-text47 Card-Text">
+              <span class="home-text41 Card-Text">
                 <span>
                   The program works very good with other programs like microsoft
                   word, webbrowsers, E-Mail.
@@ -429,7 +392,7 @@
                   </svg>
                 </div>
               </div>
-              <span class="home-text52 Card-Text">
+              <span class="home-text46 Card-Text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
                 nec odio. Praesent libero.
               </span>
@@ -438,8 +401,8 @@
               <div class="home-card-heading2">
                 <div class="home-name-and-position2">
                   <span class="home-name2">
-                    <span class="home-text53">Kinker068#7901</span>
-                    <br class="home-text54 Card-Heading" />
+                    <span class="home-text47">Kinker068#7901</span>
+                    <br class="home-text48 Card-Heading" />
                   </span>
                   <span class="home-position2 Card-Text">Student</span>
                 </div>
@@ -479,7 +442,7 @@
                   </svg>
                 </div>
               </div>
-              <span class="home-text55">
+              <span class="home-text49">
                 This program is a good and easy way to type greek, would
                 recommend it to anyone who wants to learn ancient greek.
               </span>
@@ -489,7 +452,7 @@
         <div class="home-section-separator3"></div>
         <div id="contact" class="home-contact">
           <div class="home-content-container">
-            <h2 class="home-text56 Section-Heading">Contact</h2>
+            <h2 class="home-text50 Section-Heading">Contact</h2>
             <div class="home-locations-container">
               <div class="home-location-1">
                 <span class="home-heading4">Discord</span>
@@ -584,7 +547,7 @@
           <img
             alt="image"
             src="https://images.unsplash.com/photo-1587560699334-cc4ff634909a?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDEwfHxjb250YWN0fGVufDB8fHx8MTY2OTM3MjAwNQ&amp;ixlib=rb-4.0.3&amp;w=1500"
-            class="home-image6"
+            class="home-image5"
           />
         </div>
       </div>
