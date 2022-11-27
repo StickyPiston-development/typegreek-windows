@@ -1115,11 +1115,13 @@
     padding: var(--dl-space-space-unit);
   }
   .home-logo {
-    margin-left: 0px;
-    margin-right: 316px;
+    margin-left: 10%;
+  }
+  .home-burger-menu {
+    margin-right: 10%;
   }
   .home-icon {
-    margin-right: 4%;
+    margin-right: 20%;
   }
   .home-mobile-menu {
     height: 325px;
