@@ -287,6 +287,10 @@
   margin-left: 32px;
   text-decoration: none;
 }
+.download-navlink1 {
+  margin-left: 32px;
+  text-decoration: none;
+}
 .download-link4 {
   margin-left: 32px;
   text-decoration: none;
@@ -350,11 +354,15 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.download-navlink1 {
+.download-navlink2 {
   margin-bottom: var(--dl-space-space-unit);
   text-decoration: none;
 }
 .download-link5 {
+  margin-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
+}
+.download-navlink3 {
   margin-bottom: var(--dl-space-space-unit);
   text-decoration: none;
 }
@@ -462,6 +470,9 @@
   .download-link3 {
     text-decoration: none;
   }
+  .download-navlink1 {
+    text-decoration: none;
+  }
   .download-link4 {
     text-decoration: none;
   }
@@ -522,6 +533,9 @@
   .download-link3 {
     margin-left: var(--dl-space-space-unit);
   }
+  .download-navlink1 {
+    margin-left: var(--dl-space-space-unit);
+  }
   .download-link4 {
     margin-left: var(--dl-space-space-unit);
   }
@@ -575,7 +589,6 @@
   }
   .download-logo {
     margin-left: 0px;
-    margin-right: 316px;
   }
   .download-icon18 {
     margin-right: 4%;
