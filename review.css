@@ -491,10 +491,8 @@
   }
   .review-container3 {
     height: 104px;
-    align-items: flex-start;
+    flex-wrap: wrap;
     margin-bottom: 29px;
-    flex-direction: column;
-    justify-content: flex-start;
   }
   .review-textinput {
     margin-left: var(--dl-space-space-doubleunit);
@@ -567,10 +565,7 @@
   }
   .review-container3 {
     width: 323px;
-    height: 83px;
-  }
-  .review-textinput1 {
-    height: 62px;
+    height: 102px;
   }
   .review-textarea {
     width: 80%;

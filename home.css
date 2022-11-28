@@ -970,7 +970,7 @@
     margin-right: 13px;
   }
   .home-mobile-menu {
-    height: 380px;
+    height: 388px;
   }
   .home-cta-btn1 {
     margin-left: 56px;
@@ -1055,9 +1055,12 @@
     display: flex;
   }
   .home-mobile-menu {
-    height: 379px;
+    height: 384px;
     box-shadow: 5px 5px 10px 0px #d4d4d4;
     margin-bottom: 0px;
+  }
+  .home-navlink1 {
+    text-decoration: none;
   }
   .home-cta-btn1 {
     display: none;
@@ -1151,7 +1154,7 @@
     margin-right: 20%;
   }
   .home-mobile-menu {
-    height: 325px;
+    height: 363px;
     padding: 16px;
   }
   .home-image {
