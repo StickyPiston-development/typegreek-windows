@@ -99,7 +99,7 @@ GuiControl,, Breve, % "("
 GuiControl,, SubIota, % ";"
 return
 
-esc::exitapp
+^+!esc::exitapp
 
 ;----Alpha
 +a::send(0x0391)
@@ -113,29 +113,18 @@ g::send(0x03B3)
 ;----Delta
 +d::send(0x0394)
 d::send(0x03B4)
-;
-;----Epsilon/Eta
-+e::
-send(0x0395)
-while(getkeystate("E", "P"))
-	if(getkeystate("T", "P"))
-	{
-		send {BS}
-		send(0x0397)
-	}
-return
-e::
-send(0x03B5)
-while(getkeystate("E", "P"))
-	if(getkeystate("T", "P"))
-	{
-		send {BS}
-		send(0x03B7)
-	}
-return
+;----Epsilon
++e::send(0x0395)
+e::send(0x03B5)
 ;----Zeta
 +z::send(0x0396)
 z::send(0x03B6)
+;----Eta
++h::send(0x0397)
+h::send(0x03B7)
+;----Theta
++q::send(0x0398)
+q::send(0x03B8)
 ;----Iota
 +i::send(0x0399)
 i::send(0x03B9)
@@ -146,46 +135,20 @@ k::send(0x03BA)
 +l::send(0x039B)
 l::send(0x03BB)
 ;----Mu
-+m::
-if(!getkeystate("O", "P"))
-	send(0x039C)
-return
-m::
-if(!getkeystate("O", "P"))
-	send(0x03BC)
-return
++m::send(0x039C)
+m::send(0x03BC)
 ;----Nu
 +n::send(0x039D)
 n::send(0x03BD)
 ;----Xi
-+x::send(0x039E)
-x::send(0x03BE)
++c::send(0x039E)
+c::send(0x03BE)
 ;----Omicron/Omega
-+o::
-send(0x039F)
-while(getkeystate("O", "P"))
-	if(getkeystate("M", "P"))
-	{
-		send {BS}
-		send(0x03A9)
-	}
-return
-o::
-send(0x03BF)
-while(getkeystate("O", "P"))
-	if(getkeystate("M", "P"))
-	{
-		send {BS}
-		send(0x03C9)
-	}
-return
++o::send(0x039F)
+o::send(0x03BF)
 ;----Pi
-p & i::
-if(getkeystate("Shift", "P"))
-	send(0x03A0)
-else
-	send(0x03C0)
-return
++p::send(0x03A0)
+p::send(0x03C0)
 ;----Rho
 +r::send(0x03A1)
 r::send(0x03C1)
@@ -199,52 +162,23 @@ if(ErrorLevel == "EndKey:Space" OR ErrorLevel == "EndKey:Tab" OR ErrorLevel == "
 	Send, % "{BS 2}{U+03C2}{" SubStr(ErrorLevel, 8) "}"
 return
 ;----Tau/Theta
-+t::
-if(!getkeystate("E", "P"))
-{
-	send(0x03A4)
-	while(getkeystate("T", "P"))
-		if(getkeystate("H", "P"))
-		{
-			send {BS 2}
-			send(0x0398)
-			return
-		}
-}
-return
-t::
-if(!getkeystate("E", "P"))
-{
-	send(0x03C4)
-	while(getkeystate("T", "P"))
-		if(getkeystate("H", "P"))
-		{
-			send {BS 2}
-			send(0x03B8)
-			return
-		}
-}
-return
++t::send(0x03A4)
+t::send(0x03C4)
 ;----Upsilon
 +u::send(0x03A5)
 u::send(0x03C5)
 ;----Phi
-p & h::
-if(getkeystate("Shift", "P"))
-	send(0x03A6)
-else
-	send(0x03C6)
-return
++f::send(0x03A6)
+f::send(0x03C6)
 ;----Chi
-+c::send(0x03A7)
-c::send(0x03C7)
++x::send(0x03A7)
+x::send(0x03C7)
 ;----Psi
-p & s::
-if(getkeystate("Shift", "P"))
-	send(0x03A8)
-else
-	send(0x03C8)
-return
++y::send(0x03A8)
+y::send(0x03C8)
+;----Omega
++w::send(0x03A9)
+w::send(0x03C9)
 
 isMod(modifier)
 {
