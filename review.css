@@ -212,6 +212,9 @@
   width: 256px;
   height: 41px;
 }
+.review-textinput2 {
+  margin-bottom: var(--dl-space-space-doubleunit);
+}
 .review-container4 {
   flex: 0 0 auto;
   width: auto;
@@ -502,6 +505,9 @@
   .review-textinput1 {
     margin-left: var(--dl-space-space-doubleunit);
   }
+  .review-textinput2 {
+    margin-left: var(--dl-space-space-doubleunit);
+  }
   .review-select {
     margin-left: var(--dl-space-space-doubleunit);
   }
@@ -566,6 +572,11 @@
   .review-container3 {
     width: 323px;
     height: 102px;
+    margin-bottom: var(--dl-space-space-doubleunit);
+  }
+  .review-textinput2 {
+    margin-left: var(--dl-space-space-doubleunit);
+    margin-bottom: var(--dl-space-space-doubleunit);
   }
   .review-textarea {
     width: 80%;
