@@ -1798,12 +1798,14 @@
     text-align: center;
   }
   .home-cards-container1 {
-    flex: 1;
+    height: 100%;
+    flex-wrap: wrap;
     align-items: center;
     flex-direction: column;
   }
   .home-testimonial-card {
     width: 70%;
+    height: 300px;
     margin-bottom: var(--dl-space-space-tripleunit);
   }
   .home-stars-container {
@@ -1825,6 +1827,7 @@
   }
   .home-cards-container2 {
     flex: 1;
+    height: 100%;
     align-items: center;
     flex-direction: column;
   }
@@ -1851,6 +1854,7 @@
   }
   .home-cards-container3 {
     flex: 1;
+    height: 100%;
     align-items: center;
     flex-direction: column;
   }
