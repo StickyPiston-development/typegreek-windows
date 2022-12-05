@@ -4,7 +4,7 @@
 SendMode, Input
 diacritics := ["-", "+", "/", "\", "=", ":", "_", "(", ";", ""] ;[psili, dasia, acute, grave, circumflex, diaeresis, macron, breve, iotaSub]
 vowels := [0x03B1, 0x03B5, 0x03B7, 0x03B9, 0x03BF, 0x03C5, 0x03C9] ;[alpha, epsilon, eta, iota, omicron, upsilon, omega]
-MsgBox, % "Ctrl+Shift+Alt+H voor uitleg`nCtrl+Shift+Alt+T om in of uit te schakelen`nCtrl+Shift+Alt+E om de accenten te bedwerken`nEscape om te stoppen"
+MsgBox, % "Ctrl+Shift+Alt+H voor uitleg`nCtrl+Shift+Alt+T om in of uit te schakelen`nCtrl+Shift+Alt+E om de accenten te bedwerken`nCtrl+Shift+Alt+Esc om te stoppen"
 IfExist, %A_ScriptDir%\diacritics.dat
 	Loop, Read, %A_ScriptDir%\diacritics.dat
 		diacritics[A_Index] := A_LoopReadLine
@@ -16,7 +16,7 @@ Gui, Add, Text, x12 y5 w70 h30, Letters:
 Gui, Add, Text, x152 y5 w90 h25, Accenten:
 Gui, font, s10
 Gui, Add, Text, x12 y29 w180 h405, % "A`nB`nG`nD`nE`nZ`nE+T`nT+H`nI`nK`nL`nM`nN`nX`nO`nP+I`nR`nS`ns*`nT`nU`nP+H`nC`nP+S`nO+M"
-Gui, Add, Text, x90 y29 w180 h405, % "Alfa`nBeta`nGamma`nDelta`nEta`nDzeta`nEta`nTheta`nIota`nKappa`nLambda`nMu`nNu`nXi`nOmicron`nPi`nRho`nSigma`nSigma*`nTau`nUpsilon`nPhi`nChi`nPsi`nOmega"
+Gui, Add, Text, x90 y29 w180 h405, % "Alfa`nBeta`nGamma`nDelta`nEpsilon`nDzeta`nEta`nTheta`nIota`nKappa`nLambda`nMu`nNu`nXi`nOmicron`nPi`nRho`nSigma`nSlot-sigma`nTau`nUpsilon`nPhi`nChi`nPsi`nOmega"
 Gui, font, s10
 Gui, Add, Text, x152 y29 w120 h190, % "Spiritus lenis:`nSpiritus asper:`nAcutus:`nGravis:`nCircumflexus:`nTrema:`nMacron:`nBreve:`nIota subscriptum:"
 Gui, Add, Text, x278 y29 w40 h190, % diacritics[1] "`n" diacritics[2] "`n" diacritics[4] "`n" diacritics[3] "`n" diacritics[5] "`n" diacritics[6] "`n" diacritics[7] "`n" diacritics[8] "`n" diacritics[9]
