@@ -935,7 +935,7 @@
 }
 @media(max-width: 1200px) {
   .home-cards-container1 {
-    height: 1086px;
+    height: 1034px;
     flex-direction: column;
   }
 }
@@ -977,7 +977,7 @@
     width: 100%;
   }
   .home-cards-container1 {
-    height: 1207px;
+    height: 1299px;
     padding-right: var(--dl-space-space-doubleunit);
     flex-direction: column;
     padding-bottom: 0px;
