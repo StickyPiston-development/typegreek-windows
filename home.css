@@ -935,7 +935,7 @@
 }
 @media(max-width: 1200px) {
   .home-cards-container1 {
-    height: 1034px;
+    height: 1100px;
     flex-direction: column;
   }
 }
