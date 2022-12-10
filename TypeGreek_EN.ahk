@@ -9,8 +9,10 @@ IfExist, %A_ScriptDir%\diacritics.dat
 	Loop, Read, %A_ScriptDir%\diacritics.dat
 		diacritics[A_Index] := A_LoopReadLine
 ^+!h::
+Suspend, permit
 Gui, destroy
 Gui, -MinimizeBox
+Gui, +AlwaysOnTop
 Gui, font, s15
 Gui, Add, Text, x12 y5 w70 h30, Letters:
 Gui, Add, Text, x152 y5 w90 h30, Diacritics:
@@ -27,16 +29,19 @@ Gui, Show, w300 h490, Help
 return
 
 ButtonChangeDiacritics:
+Suspend, permit
 send, ^+!e
 return
 
 ButtonOK:
 GuiClose:
 GuiEscape:
+Suspend, permit
 Gui, destroy
 return
 
 ^+!e::
+Suspend, permit
 Gui, destroy
 Gui, -MinimizeBox
 Gui, font, s10
@@ -68,10 +73,12 @@ Gui, Show, w180 h262, Change Diacritics
 return
 
 ButtonCancel:
+Suspend, permit
 Gui, destroy
 return
 
 ButtonChange:
+Suspend, permit
 Gui, submit
 if(Psili == Dasia OR Psili == Acute OR Psili == Grave OR Psili == Circumflex OR Psili == Diaeresis OR Psili == Macron OR Psili == Breve OR Psili == SubIota OR Dasia == Acute OR Dasia == Grave OR Dasia == Circumflex OR Dasia == Diaeresis OR Dasia == Macron OR Dasia == Breve OR Dasia == SubIota OR Acute == Grave OR Acute == Circumflex OR Acute == Diaeresis OR Acute == Macron OR Acute == Breve OR Acute == SubIota OR Grave == Circumflex OR Grave == Diaeresis OR Grave == Macron OR Grave == Breve OR Grave == SubIota OR Circumflex == Diaeresis OR Circumflex == Macron OR Circumflex == Breve OR Circumflex == SubIota OR Diaeresis == Macron OR Diaeresis == Breve OR Diaeresis == SubIota OR Macron == Breve OR Macron == SubIota OR Breve == SubIota)
 {
@@ -88,6 +95,7 @@ else
 return
 
 ButtonDefault:
+Suspend, permit
 GuiControl,, Psili, % "-"
 GuiControl,, Dasia, % "+"
 GuiControl,, Acute, % "/"
@@ -99,7 +107,9 @@ GuiControl,, Breve, % "("
 GuiControl,, SubIota, % ";"
 return
 
-^+!esc::exitapp
+^+!esc::
+Suspend, permit
+exitapp
 
 ;----Alpha
 +a::send(0x0391)
