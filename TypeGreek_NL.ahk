@@ -8,6 +8,7 @@ MsgBox, % "Ctrl+Shift+Alt+H voor uitleg`nCtrl+Shift+Alt+T om in of uit te schake
 IfExist, %A_ScriptDir%\diacritics.dat
 	Loop, Read, %A_ScriptDir%\diacritics.dat
 		diacritics[A_Index] := A_LoopReadLine
+
 ^+!h::
 Suspend, permit
 Gui, destroy
@@ -988,4 +989,11 @@ changeCode(hex, mod)
 	}
 	return ret
 }
-^+!t::Suspend, Toggle
+
+^+!t::
+Suspend, Toggle
+IF A_ISSUSPENDED = 1
+Menu, tray, icon, disabled_icon.ico, , 1
+else if A_ISSUSPENDED = 0
+Menu, tray, icon, icon.ico, , 1
+return

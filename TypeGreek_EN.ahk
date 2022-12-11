@@ -8,6 +8,7 @@ MsgBox, % "Ctrl+Shift+Alt+H for help`nCtrl+Shift+Alt+T to toggle`nCtrl+Shift+Alt
 IfExist, %A_ScriptDir%\diacritics.dat
 	Loop, Read, %A_ScriptDir%\diacritics.dat
 		diacritics[A_Index] := A_LoopReadLine
+
 ^+!h::
 Suspend, permit
 Gui, destroy
@@ -989,4 +990,10 @@ changeCode(hex, mod)
 	return ret
 }
 
-^+!t::Suspend, Toggle
+^+!t::
+Suspend, Toggle
+IF A_ISSUSPENDED = 1
+Menu, tray, icon, disabled_icon.ico, , 1
+else if A_ISSUSPENDED = 0
+Menu, tray, icon, icon.ico, , 1
+return
