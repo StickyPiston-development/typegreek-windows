@@ -401,7 +401,7 @@
   margin-bottom: var(--dl-space-space-unit);
   text-decoration: none;
 }
-.download-text24 {
+.download-link3 {
   margin-bottom: var(--dl-space-space-unit);
   text-decoration: none;
 }
@@ -432,7 +432,7 @@
   opacity: 0.9;
   box-shadow: 5px 5px 10px 0px #d4d4d4;
 }
-.download-text25 {
+.download-text24 {
   font-size: 18px;
 }
 .download-cta-btn2 {
@@ -456,14 +456,14 @@
   opacity: 0.9;
   box-shadow: 5px 5px 10px 0px #d4d4d4;
 }
-.download-text28 {
+.download-text27 {
   font-size: 18px;
 }
 @media(max-width: 1200px) {
   .download-mobile-menu {
     height: 326px;
   }
-  .download-text24 {
+  .download-link3 {
     text-decoration: none;
   }
 }

@@ -32,6 +32,9 @@
 
 
 @media(max-width: 479px) {
+  .feature-card-feature-card {
+    margin-left: var(--dl-space-space-unit);
+  }
   .feature-card-text {
     font-style: normal;
     font-weight: 600;
@@ -912,48 +915,6 @@
   flex-direction: column;
   background-color: var(--dl-color-gray-700);
 }
-.home-about-us {
-  width: 100%;
-  display: flex;
-  padding: 48px;
-  max-width: var(--dl-size-size-maxcontent);
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.home-heading-container1 {
-  width: 35%;
-  display: flex;
-  align-items: flex-start;
-  margin-right: var(--dl-space-space-fiveunits);
-  flex-direction: column;
-}
-.home-text26 {
-  margin-bottom: var(--dl-space-space-tripleunit);
-}
-.home-secondary-text {
-  color: var(--dl-color-gray-500);
-  margin-bottom: var(--dl-space-space-tripleunit);
-}
-.home-text-container {
-  width: 45%;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: center;
-}
-.home-text29 {
-  color: var(--dl-color-gray-500);
-  font-size: 16px;
-}
-.home-text30 {
-  font-size: 16px;
-  font-family: Open Sans;
-  font-weight: 400;
-  line-height: 1.55;
-  text-transform: none;
-  text-decoration: none;
-}
 .home-features1 {
   width: 100%;
   display: flex;
@@ -961,9 +922,8 @@
   max-width: 1400px;
   flex-direction: column;
 }
-.home-text39 {
+.home-text26 {
   font-size: 3rem;
-  margin-bottom: 32px;
 }
 .home-container3 {
   flex: 0 0 auto;
@@ -990,6 +950,56 @@
   align-items: flex-start;
   flex-direction: column;
   background-color: var(--dl-color-gray-700);
+}
+.home-section-separator3 {
+  width: 100%;
+  height: 1px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: var(--dl-color-gray-700);
+}
+.home-about-us {
+  width: 100%;
+  display: flex;
+  padding: 48px;
+  max-width: var(--dl-size-size-maxcontent);
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.home-heading-container1 {
+  width: 35%;
+  display: flex;
+  align-items: flex-start;
+  margin-right: var(--dl-space-space-fiveunits);
+  flex-direction: column;
+}
+.home-text27 {
+  margin-bottom: var(--dl-space-space-tripleunit);
+}
+.home-secondary-text {
+  color: var(--dl-color-gray-500);
+  margin-bottom: var(--dl-space-space-tripleunit);
+}
+.home-text-container {
+  width: 45%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.home-text30 {
+  color: var(--dl-color-gray-500);
+  font-size: 16px;
+}
+.home-text31 {
+  font-size: 16px;
+  font-family: Open Sans;
+  font-weight: 400;
+  line-height: 1.55;
+  text-transform: none;
+  text-decoration: none;
 }
 .home-reviews {
   width: 100%;
@@ -1032,7 +1042,7 @@
   margin-top: var(--dl-space-space-doubleunit);
   flex-direction: column;
 }
-.home-section-separator3 {
+.home-section-separator4 {
   width: 100%;
   height: 1px;
   display: flex;
@@ -1047,22 +1057,35 @@
   }
 }
 @media(max-width: 1200px) {
+  .home-navbar-interactive {
+    justify-content: space-between;
+  }
+  .home-logo {
+    margin-right: 0px;
+  }
+  .home-cta-btn1 {
+    align-self: flex-start;
+    margin-left: var(--dl-space-space-fiveunits);
+  }
   .home-cards-container1 {
     height: 1100px;
     flex-direction: column;
   }
 }
 @media(max-width: 991px) {
-  .home-logo {
-    margin-left: 50px;
-    margin-right: 13px;
+  .home-navbar-interactive {
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    justify-content: space-between;
+  }
+  .home-link {
+    margin-left: 0px;
   }
   .home-mobile-menu {
     height: 388px;
   }
   .home-cta-btn1 {
-    margin-left: 56px;
-    margin-right: 50px;
+    margin-left:  px;
   }
   .home-hero {
     width: 100%;
@@ -1078,6 +1101,12 @@
   .home-feature-card {
     align-self: center;
   }
+  .home-features1 {
+    align-items: center;
+  }
+  .home-container3 {
+    flex-direction: column;
+  }
   .home-about-us {
     flex-direction: column;
   }
@@ -1089,12 +1118,6 @@
   .home-text-container {
     width: 100%;
   }
-  .home-features1 {
-    align-items: center;
-  }
-  .home-container3 {
-    flex-direction: column;
-  }
   .home-cards-container1 {
     height: 1299px;
     padding-right: var(--dl-space-space-doubleunit);
@@ -1105,6 +1128,7 @@
 @media(max-width: 767px) {
   .home-navbar-interactive {
     opacity: 1;
+    align-self: center;
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -1171,27 +1195,27 @@
   .home-feature-card2 {
     width: 70%;
   }
+  .home-features1 {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .home-text26 {
+    text-align: center;
+  }
+  .home-container3 {
+    flex-direction: column;
+  }
   .home-about-us {
     align-items: center;
   }
   .home-heading-container1 {
     align-items: center;
   }
-  .home-text26 {
+  .home-text27 {
     text-align: center;
   }
   .home-secondary-text {
     text-align: center;
-  }
-  .home-features1 {
-    padding-left: 32px;
-    padding-right: 32px;
-  }
-  .home-text39 {
-    text-align: center;
-  }
-  .home-container3 {
-    flex-direction: column;
   }
   .home-text40 {
     text-align: center;
@@ -1208,10 +1232,7 @@
     padding: var(--dl-space-space-unit);
   }
   .home-logo {
-    margin-left: 10%;
-  }
-  .home-burger-menu {
-    margin-right: 10%;
+    margin-right: 0px;
   }
   .home-icon {
     margin-right: 20%;
@@ -1257,24 +1278,6 @@
   .home-feature-card2 {
     width: 100%;
   }
-  .home-secondary-text {
-    text-align: center;
-  }
-  .home-text29 {
-    color: var(--dl-color-gray-500);
-    font-size: 16px;
-    font-style: normal;
-    font-family: Open Sans;
-    font-weight: 400;
-    line-height: 1.55;
-    text-transform: none;
-  }
-  .home-text30 {
-    text-decoration: none;
-  }
-  .home-text31 {
-    text-decoration: none;
-  }
   .home-features1 {
     padding-top: 32px;
     padding-left: var(--dl-space-space-unit);
@@ -1283,6 +1286,24 @@
   }
   .home-container4 {
     grid-template-columns: 1fr;
+  }
+  .home-secondary-text {
+    text-align: center;
+  }
+  .home-text30 {
+    color: var(--dl-color-gray-500);
+    font-size: 16px;
+    font-style: normal;
+    font-family: Open Sans;
+    font-weight: 400;
+    line-height: 1.55;
+    text-transform: none;
+  }
+  .home-text31 {
+    text-decoration: none;
+  }
+  .home-text32 {
+    text-decoration: none;
   }
   .home-text40 {
     text-align: center;

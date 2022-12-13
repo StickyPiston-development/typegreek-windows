@@ -340,7 +340,7 @@
   margin-bottom: var(--dl-space-space-unit);
   text-decoration: none;
 }
-.review-text {
+.review-link2 {
   margin-bottom: var(--dl-space-space-unit);
   text-decoration: none;
 }
@@ -371,7 +371,7 @@
   opacity: 0.9;
   box-shadow: 5px 5px 10px 0px #d4d4d4;
 }
-.review-text1 {
+.review-text {
   font-size: 18px;
 }
 .review-cta-btn1 {
@@ -395,7 +395,7 @@
   opacity: 0.9;
   box-shadow: 5px 5px 10px 0px #d4d4d4;
 }
-.review-text4 {
+.review-text3 {
   font-size: 18px;
 }
 .review-form {
@@ -407,7 +407,7 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-.review-text7 {
+.review-text6 {
   margin-top: var(--dl-space-space-fiveunits);
   margin-bottom: var(--dl-space-space-fiveunits);
 }
@@ -595,7 +595,7 @@
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
   }
-  .review-text7 {
+  .review-text6 {
     text-align: center;
   }
   .review-container3 {
