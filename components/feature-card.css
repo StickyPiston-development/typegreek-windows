@@ -1,13 +1,23 @@
 .feature-card-feature-card {
-  width: 100%;
   display: flex;
-  padding: var(--dl-space-space-unit);
+  padding: var(--dl-space-space-doubleunit);
   max-width: 1400px;
+  transition: 0.3s;
   align-items: flex-start;
+  border-color: var(--dl-color-gray-700);
+  border-width: 1px;
+  margin-right: var(--dl-space-space-unit);
+  border-radius: var(--dl-radius-radius-radius4);
+  margin-bottom: var(--dl-space-space-unit);
   flex-direction: column;
   justify-content: flex-start;
 }
+.feature-card-feature-card:hover {
+  box-shadow: 5px 5px 10px 0px #d4d4d4;
+}
 .feature-card-text {
+  font-size: 24px;
+  font-family: Roboto;
   font-weight: 600;
   margin-bottom: var(--dl-space-space-unit);
 }
