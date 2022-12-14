@@ -31,13 +31,28 @@
 
 
 
+@media(max-width: 767px) {
+  .feature-card-root-class-name1 {
+    max-width: var(--dl-size-size-maxcontent);
+  }
+}
 @media(max-width: 479px) {
   .feature-card-feature-card {
-    margin-left: var(--dl-space-space-unit);
+    margin-left: var(--dl-space-space-doubleunit);
+    margin-right: var(--dl-space-space-doubleunit);
+    margin-bottom: var(--dl-space-space-doubleunit);
   }
   .feature-card-text {
     font-style: normal;
     font-weight: 600;
+  }
+  .feature-card-root-class-name1 {
+    width: auto;
+    max-width: var(--dl-size-size-maxcontent);
+    margin-left: var(--dl-space-space-doubleunit);
+  }
+  .feature-card-root-class-name4 {
+    width: auto;
   }
 }
 
@@ -528,6 +543,7 @@
   .contact-lottie-node {
     width: 400px;
     height: 400px;
+    display: none;
   }
 }
 
@@ -1052,14 +1068,10 @@
 }
 @media(max-width: 1600px) {
   .home-cards-container1 {
-    flex: 1;
     height: 1056px;
   }
 }
 @media(max-width: 1200px) {
-  .home-navbar-interactive {
-    justify-content: space-between;
-  }
   .home-logo {
     margin-right: 0px;
   }
@@ -1068,18 +1080,13 @@
     margin-left: var(--dl-space-space-fiveunits);
   }
   .home-cards-container1 {
-    height: 1100px;
+    flex: 0 0 auto;
     flex-direction: column;
   }
 }
 @media(max-width: 991px) {
-  .home-navbar-interactive {
-    padding-left: var(--dl-space-space-unit);
-    padding-right: var(--dl-space-space-unit);
-    justify-content: space-between;
-  }
   .home-link {
-    margin-left: 0px;
+    margin-left: var(--dl-space-space-doubleunit);
   }
   .home-mobile-menu {
     height: 388px;
@@ -1128,7 +1135,6 @@
 @media(max-width: 767px) {
   .home-navbar-interactive {
     opacity: 1;
-    align-self: center;
     padding-left: 32px;
     padding-right: 32px;
   }
@@ -1232,10 +1238,14 @@
     padding: var(--dl-space-space-unit);
   }
   .home-logo {
-    margin-right: 0px;
+    margin-left: 20%;
+    margin-right: 80%;
+  }
+  .home-burger-menu {
+    margin-right: 20%;
   }
   .home-icon {
-    margin-right: 20%;
+    margin-right: 10%;
   }
   .home-mobile-menu {
     height: 363px;
@@ -1284,8 +1294,16 @@
     padding-right: var(--dl-space-space-unit);
     padding-bottom: 32px;
   }
+  .home-text26 {
+    margin-bottom: var(--dl-space-space-doubleunit);
+  }
   .home-container4 {
     grid-template-columns: 1fr;
+  }
+  .home-lottie-node1 {
+    display: none;
+    min-width: 0px;
+    margin-left: 0px;
   }
   .home-secondary-text {
     text-align: center;
