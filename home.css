@@ -1302,6 +1302,7 @@
     grid-template-columns: 1fr;
   }
   .home-lottie-node1 {
+    display: none;
     margin-left: 0px;
   }
   .home-secondary-text {
