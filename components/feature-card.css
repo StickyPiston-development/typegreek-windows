@@ -6,9 +6,9 @@
   align-items: flex-start;
   border-color: var(--dl-color-gray-700);
   border-width: 1px;
-  margin-right: var(--dl-space-space-unit);
+  margin-right: var(--dl-space-space-tripleunit);
   border-radius: var(--dl-radius-radius-radius4);
-  margin-bottom: var(--dl-space-space-unit);
+  margin-bottom: var(--dl-space-space-tripleunit);
   flex-direction: column;
   justify-content: flex-start;
 }

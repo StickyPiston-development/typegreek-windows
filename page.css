@@ -22,6 +22,11 @@
   width: 1920px;
   height: 836px;
 }
+@media(max-width: 1600px) {
+  .page-lottie-node {
+    max-width: 100%;
+  }
+}
 @media(max-width: 991px) {
   .page-lottie-node {
     max-width: 100%;
