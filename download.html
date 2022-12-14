@@ -129,7 +129,9 @@
         <div>
           <dangerous-html
             html="<script>
-window.location = 'https://github.com/StickyPiston-development/typegreek-windows/releases/latest/download/TypeGreek-installer.exe'
+document.addEventListener('DOMContentLoaded', function() {
+    window.location = 'https://github.com/StickyPiston-development/typegreek-windows/releases/latest/download/TypeGreek-installer.exe';
+}, false);
 </script>"
           ></dangerous-html>
         </div>
