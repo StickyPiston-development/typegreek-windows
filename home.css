@@ -1085,14 +1085,22 @@
   }
 }
 @media(max-width: 991px) {
+  .home-navbar-interactive {
+    padding-left: var(--dl-space-space-fourunits);
+    padding-right: var(--dl-space-space-fourunits);
+    padding-bottom: var(--dl-space-space-fourunits);
+  }
+  .home-logo {
+    margin-right: var(--dl-space-space-doubleunit);
+  }
   .home-link {
-    margin-left: var(--dl-space-space-doubleunit);
+    margin-left: 0px;
   }
   .home-mobile-menu {
     height: 388px;
   }
   .home-cta-btn1 {
-    margin-left:  px;
+    margin-left: 10%;
   }
   .home-hero {
     width: 100%;
