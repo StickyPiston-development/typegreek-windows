@@ -1,0 +1,34 @@
+.page-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.page-navlink {
+  display: contents;
+}
+.page-text {
+  font-size: 4em;
+  text-decoration: none;
+}
+.page-navlink1 {
+  font-size: 30px;
+  text-decoration: none;
+}
+.page-lottie-node {
+  width: 1920px;
+  height: 836px;
+}
+@media(max-width: 1600px) {
+  .page-lottie-node {
+    max-width: 100%;
+  }
+}
+@media(max-width: 991px) {
+  .page-lottie-node {
+    max-width: 100%;
+  }
+}
