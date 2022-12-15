@@ -935,6 +935,7 @@
 }
 .home-text26 {
   font-size: 3rem;
+  margin-bottom: var(--dl-space-space-fourunits);
 }
 .home-container3 {
   flex: 0 0 auto;
