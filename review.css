@@ -532,6 +532,10 @@
     padding-left: var(--dl-space-space-fiveunits);
     padding-right: var(--dl-space-space-fiveunits);
   }
+  .review-text6 {
+    margin-left: var(--dl-space-space-doubleunit);
+    margin-bottom: var(--dl-space-space-doubleunit);
+  }
   .review-container3 {
     height: 104px;
     flex-wrap: wrap;
@@ -598,6 +602,8 @@
   }
   .review-text6 {
     text-align: center;
+    margin-left: var(--dl-space-space-doubleunit);
+    margin-bottom: var(--dl-space-space-doubleunit);
   }
   .review-container3 {
     width: 323px;
