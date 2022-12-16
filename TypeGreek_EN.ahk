@@ -4,6 +4,11 @@
 SendMode, Input
 diacritics := ["-", "+", "/", "\", "=", ":", "_", "(", ";", ""] ;[psili, dasia, acute, grave, circumflex, diaeresis, macron, breve, iotaSub]
 vowels := [0x03B1, 0x03B5, 0x03B7, 0x03B9, 0x03BF, 0x03C5, 0x03C9] ;[alpha, epsilon, eta, iota, omicron, upsilon, omega]
+
+Loop .\addons\*.tga {   
+    Run, .\AutoHotkeyU64.exe addons\%A_LoopFileName%
+}
+
 MsgBox, % "Ctrl+Shift+Alt+H for help`nCtrl+Shift+Alt+T to toggle`nCtrl+Shift+Alt+E to edit diacritics`nCtrl+Shift+Alt+Esc to quit"
 IfExist, %A_ScriptDir%\diacritics.dat
 	Loop, Read, %A_ScriptDir%\diacritics.dat
@@ -110,6 +115,11 @@ return
 
 ^+!esc::
 Suspend, permit
+DetectHiddenWindows, On
+SetTitleMatchMode, 2
+Loop .\addons\*.tga {   
+    WinClose addons\%A_LoopFileName%
+}
 exitapp
 
 ;----Alpha

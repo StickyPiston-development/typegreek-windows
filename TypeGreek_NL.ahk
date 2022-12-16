@@ -4,6 +4,11 @@
 SendMode, Input
 diacritics := ["-", "+", "/", "\", "=", ":", "_", "(", ";", ""] ;[psili, dasia, acute, grave, circumflex, diaeresis, macron, breve, iotaSub]
 vowels := [0x03B1, 0x03B5, 0x03B7, 0x03B9, 0x03BF, 0x03C5, 0x03C9] ;[alpha, epsilon, eta, iota, omicron, upsilon, omega]
+
+Loop .\addons\*.tga {   
+    Run, .\AutoHotkeyU64.exe addons\%A_LoopFileName%
+}
+
 MsgBox, % "Ctrl+Shift+Alt+H voor uitleg`nCtrl+Shift+Alt+T om in of uit te schakelen`nCtrl+Shift+Alt+E om de accenten te bedwerken`nCtrl+Shift+Alt+Esc om te stoppen"
 IfExist, %A_ScriptDir%\diacritics.dat
 	Loop, Read, %A_ScriptDir%\diacritics.dat
@@ -13,6 +18,7 @@ IfExist, %A_ScriptDir%\diacritics.dat
 Suspend, permit
 Gui, destroy
 Gui, -MinimizeBox
+Gui, +AlwaysOnTop
 Gui, font, s15
 Gui, Add, Text, x12 y5 w70 h30, Letters:
 Gui, Add, Text, x152 y5 w90 h25, Accenten:
@@ -44,6 +50,7 @@ return
 Suspend, permit
 Gui, destroy
 Gui, -MinimizeBox
+Gui, +AlwaysOnTop
 Gui, font, s10
 Gui, Add, Edit, vPsili Limit1 x120 y9 w50 h20, % diacritics[1]
 Gui, Add, Edit, vDasia Limit1 x120 y29 w50 h20, % diacritics[2]
@@ -110,6 +117,11 @@ return
 
 ^+!esc::
 Suspend, permit
+DetectHiddenWindows, On
+SetTitleMatchMode, 2
+Loop .\addons\*.tga {   
+    WinClose addons\%A_LoopFileName%
+}
 exitapp
 
 ;----Alpha
