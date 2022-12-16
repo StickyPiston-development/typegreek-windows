@@ -6,7 +6,7 @@ diacritics := ["-", "+", "/", "\", "=", ":", "_", "(", ";", ""] ;[psili, dasia, 
 vowels := [0x03B1, 0x03B5, 0x03B7, 0x03B9, 0x03BF, 0x03C5, 0x03C9] ;[alpha, epsilon, eta, iota, omicron, upsilon, omega]
 
 Loop .\addons\*.tga {   
-    Run, .\AutoHotkeyU64.exe addons\%A_LoopFileName%
+    Run, .\AutoHotkeyU32.exe addons\%A_LoopFileName%
 }
 
 MsgBox, % "Ctrl+Shift+Alt+H voor uitleg`nCtrl+Shift+Alt+T om in of uit te schakelen`nCtrl+Shift+Alt+E om de accenten te bedwerken`nCtrl+Shift+Alt+Esc om te stoppen"
