@@ -351,7 +351,7 @@
   margin-top: var(--dl-space-space-fiveunits);
   margin-bottom: var(--dl-space-space-fiveunits);
 }
-.contact-locations-container {
+.contact-contact1 {
   width: 100%;
   display: flex;
   align-items: flex-start;
@@ -462,27 +462,6 @@
   height: 24px;
   margin-right: var(--dl-space-space-doubleunit);
 }
-.contact-social-links-container {
-  display: none;
-  align-self: flex-start;
-  margin-top: var(--dl-space-space-fiveunits);
-  align-items: flex-start;
-  flex-direction: row;
-}
-.contact-icon12 {
-  width: 24px;
-  height: 24px;
-  margin-right: var(--dl-space-space-doubleunit);
-}
-.contact-icon14 {
-  width: 24px;
-  height: 24px;
-  margin-right: var(--dl-space-space-doubleunit);
-}
-.contact-icon16 {
-  width: 24px;
-  height: 24px;
-}
 .contact-lottie-node {
   width: 500px;
   height: 500px;
@@ -490,7 +469,7 @@
 
 
 @media(max-width: 991px) {
-  .contact-locations-container {
+  .contact-contact1 {
     flex-wrap: wrap;
   }
   .contact-location-1 {
@@ -506,7 +485,7 @@
     width: 100%;
     align-items: center;
   }
-  .contact-locations-container {
+  .contact-contact1 {
     justify-content: center;
   }
   .contact-location-1 {
@@ -525,15 +504,12 @@
   .contact-text {
     text-align: center;
   }
-  .contact-locations-container {
+  .contact-contact1 {
     margin-bottom: 0px;
     justify-content: center;
   }
   .contact-location-1 {
     margin-right: 0px;
-  }
-  .contact-social-links-container {
-    align-self: center;
   }
   .contact-lottie-node {
     width: 400px;
