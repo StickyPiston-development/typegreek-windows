@@ -397,7 +397,7 @@
   flex-direction: row;
   text-decoration: none;
 }
-.contact-icon02 {
+.contact-icon2 {
   width: 24px;
   height: 24px;
   margin-right: var(--dl-space-space-doubleunit);
@@ -412,52 +412,7 @@
   flex-direction: row;
   text-decoration: none;
 }
-.contact-icon04 {
-  width: 24px;
-  height: 24px;
-  margin-right: var(--dl-space-space-doubleunit);
-}
-.contact-location-2 {
-  display: none;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.contact-heading1 {
-  font-size: 24px;
-  font-style: normal;
-  font-family: Roboto;
-  font-weight: 700;
-  margin-bottom: var(--dl-space-space-doubleunit);
-}
-.contact-adress1 {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: var(--dl-space-space-doubleunit);
-  flex-direction: row;
-}
-.contact-icon06 {
-  width: 24px;
-  height: 24px;
-  margin-right: var(--dl-space-space-doubleunit);
-}
-.contact-email1 {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: var(--dl-space-space-doubleunit);
-  flex-direction: row;
-}
-.contact-icon08 {
-  width: 24px;
-  height: 24px;
-  margin-right: var(--dl-space-space-doubleunit);
-}
-.contact-phone {
-  display: flex;
-  align-items: flex-start;
-  margin-bottom: var(--dl-space-space-doubleunit);
-  flex-direction: row;
-}
-.contact-icon10 {
+.contact-icon4 {
   width: 24px;
   height: 24px;
   margin-right: var(--dl-space-space-doubleunit);
