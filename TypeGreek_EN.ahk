@@ -23,8 +23,8 @@ Gui, font, s15
 Gui, Add, Text, x12 y5 w70 h30, Letters:
 Gui, Add, Text, x152 y5 w90 h30, Diacritics:
 Gui, font, s10
-Gui, Add, Text, x12 y29 w180 h405, % "A`nB`nG`nD`nE`nZ`nH`nQ`nI`nK`nL`nM`nN`nC`nO`nP`nR`nS`nS+space`nT`nU`nF`nX`nP`nW"
-Gui, Add, Text, x90 y29 w180 h405, % "Alfa`nBeta`nGamma`nDelta`nEpsilon`nDzeta`nEta`nTheta`nIota`nKappa`nLambda`nMu`nNu`nXi`nOmicron`nPi`nRho`nSigma`nFinal Sigma`nTau`nUpsilon`nPhi`nChi`nPsi`nOmega"
+Gui, Add, Text, x12 y29 w180 h405, % "A`nB`nG`nD`nE`nZ`nH`nQ`nI`nK`nL`nM`nN`nC`nO`nP`nR`nS`nS+space`nT`nU`nF`nX`nY`nW"
+Gui, Add, Text, x90 y29 w180 h405, % "Alpha`nBeta`nGamma`nDelta`nEpsilon`nDzeta`nEta`nTheta`nIota`nKappa`nLambda`nMu`nNu`nXi`nOmicron`nPi`nRho`nSigma`nFinal Sigma`nTau`nUpsilon`nPhi`nChi`nPsi`nOmega"
 Gui, font, s10
 Gui, Add, Text, x152 y29 w120 h190, % "Psili:`nDasia:`nAcute:`nGrave:`nCircumflex:`nDiaeresis:`nMacron:`nBreve:`nSub. Iota:"
 Gui, Add, Text, x278 y29 w40 h190, % diacritics[1] "`n" diacritics[2] "`n" diacritics[4] "`n" diacritics[3] "`n" diacritics[5] "`n" diacritics[6] "`n" diacritics[7] "`n" diacritics[8] "`n" diacritics[9]

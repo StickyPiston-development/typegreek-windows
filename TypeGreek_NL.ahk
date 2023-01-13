@@ -23,7 +23,7 @@ Gui, font, s15
 Gui, Add, Text, x12 y5 w70 h30, Letters:
 Gui, Add, Text, x152 y5 w90 h25, Accenten:
 Gui, font, s10
-Gui, Add, Text, x12 y29 w180 h405, % "A`nB`nG`nD`nE`nZ`nH`nQ`nI`nK`nL`nM`nN`nC`nO`nP`nR`nS`nS+spatie`nT`nU`nF`nX`nP`nW"
+Gui, Add, Text, x12 y29 w180 h405, % "A`nB`nG`nD`nE`nZ`nH`nQ`nI`nK`nL`nM`nN`nC`nO`nP`nR`nS`nS+spatie`nT`nU`nF`nX`nY`nW"
 Gui, Add, Text, x90 y29 w180 h405, % "Alfa`nBeta`nGamma`nDelta`nEpsilon`nDzeta`nEta`nTheta`nIota`nKappa`nLambda`nMu`nNu`nXi`nOmicron`nPi`nRho`nSigma`nSlot-sigma`nTau`nUpsilon`nPhi`nChi`nPsi`nOmega"
 Gui, font, s10
 Gui, Add, Text, x152 y29 w120 h190, % "Spiritus lenis:`nSpiritus asper:`nAcutus:`nGravis:`nCircumflexus:`nTrema:`nMacron:`nBreve:`nIota subscriptum:"
