@@ -92,6 +92,7 @@
   text-align: left;
 }
 
+
 @media(max-width: 1200px) {
   .testimonial-card-4-name-and-position {
     width: 100%;
@@ -116,11 +117,18 @@
 }
 @media(max-width: 767px) {
   .testimonial-card-4-testimonial-card {
-    width: 70%;
+    width: 100%;
+    max-width: var(--dl-size-size-maxcontent);
     margin-bottom: var(--dl-space-space-tripleunit);
   }
   .testimonial-card-4-stars-container {
     justify-content: flex-start;
+  }
+  .testimonial-card-4-root-class-name {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: var(--dl-space-space-tripleunit);
   }
 }
 @media(max-width: 479px) {

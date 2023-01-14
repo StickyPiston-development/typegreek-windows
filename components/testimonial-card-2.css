@@ -116,7 +116,9 @@
 }
 @media(max-width: 767px) {
   .testimonial-card-2-testimonial-card {
-    width: 70%;
+    width: 100%;
+    height: auto;
+    max-width: var(--dl-size-size-maxcontent);
     margin-bottom: var(--dl-space-space-tripleunit);
   }
   .testimonial-card-2-stars-container {

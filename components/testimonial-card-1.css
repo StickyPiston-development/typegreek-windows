@@ -100,6 +100,7 @@
   color: var(--dl-color-gray-500);
   text-align: left;
 }
+
 @media(max-width: 1200px) {
   .testimonial-card-1-name-and-position {
     width: 100%;
@@ -125,7 +126,9 @@
 }
 @media(max-width: 767px) {
   .testimonial-card-1-testimonial-card {
-    width: 70%;
+    width: 100%;
+    height: auto;
+    max-width: var(--dl-size-size-maxcontent);
     margin-bottom: var(--dl-space-space-tripleunit);
   }
   .testimonial-card-1-stars-container {

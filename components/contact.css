@@ -95,6 +95,9 @@
 }
 
 
+
+
+
 @media(max-width: 991px) {
   .contact-contact1 {
     flex-wrap: wrap;
@@ -137,6 +140,9 @@
   }
   .contact-location-1 {
     margin-right: 0px;
+  }
+  .contact-heading {
+    display: none;
   }
   .contact-lottie-node {
     width: 400px;

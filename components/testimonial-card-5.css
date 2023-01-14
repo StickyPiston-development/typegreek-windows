@@ -99,6 +99,11 @@
 
 
 
+
+
+
+
+
 @media(max-width: 1200px) {
   .testimonial-card-5-name-and-position {
     width: 100%;
@@ -123,18 +128,59 @@
 }
 @media(max-width: 767px) {
   .testimonial-card-5-testimonial-card {
-    width: 70%;
+    width: 100%;
+    max-width: var(--dl-size-size-maxcontent);
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     margin-bottom: var(--dl-space-space-tripleunit);
   }
   .testimonial-card-5-stars-container {
     justify-content: flex-start;
   }
+  .testimonial-card-5-root-class-name {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .testimonial-card-5-root-class-name1 {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: var(--dl-space-space-tripleunit);
+  }
+  .testimonial-card-5-root-class-name2 {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: var(--dl-space-space-tripleunit);
+  }
+  .testimonial-card-5-root-class-name4 {
+    margin: 0px;
+  }
+  .testimonial-card-5-root-class-name8 {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: var(--dl-space-space-tripleunit);
+  }
 }
 @media(max-width: 479px) {
   .testimonial-card-5-testimonial-card {
     width: 100%;
+    max-width: var(--dl-size-size-maxcontent);
+    margin-left: 0px;
+    margin-right: 0px;
   }
   .testimonial-card-5-name {
     font-size: 20px;
+  }
+  .testimonial-card-5-root-class-name4 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .testimonial-card-5-root-class-name8 {
+    margin-left: 0px;
+    margin-right: 0px;
   }
 }
