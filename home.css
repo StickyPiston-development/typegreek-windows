@@ -1190,7 +1190,7 @@
 .home-text-container {
   width: 100%;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
 }
@@ -1219,6 +1219,15 @@
   background-color: var(--dl-color-gray-700);
 }
 @media(max-width: 1600px) {
+  .home-heading1 {
+    text-align: center;
+  }
+  .home-heading2 {
+    text-align: center;
+  }
+  .home-heading3 {
+    text-align: center;
+  }
   .home-cards-container1 {
     height: 706px;
   }
@@ -1244,7 +1253,16 @@
     margin-bottom: var(--dl-space-space-tripleunit);
   }
   .home-feature-card {
-    align-self: center;
+    align-self: flex-start;
+  }
+  .home-heading1 {
+    text-align: center;
+  }
+  .home-heading2 {
+    text-align: center;
+  }
+  .home-heading3 {
+    text-align: center;
   }
   .home-features1 {
     align-items: center;
@@ -1266,16 +1284,23 @@
     flex-direction: column;
   }
   .home-about-us1 {
+    width: 100%;
     flex-direction: column;
   }
   .home-text-container {
     width: 100%;
+  }
+  .home-text30 {
+    align-self: center;
   }
   .home-lottie-node2 {
     max-width: 100%;
   }
 }
 @media(max-width: 767px) {
+  .home-hero-text-container {
+    margin-left: 0px;
+  }
   .home-heading {
     text-align: center;
   }
